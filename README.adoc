@@ -79,11 +79,39 @@ The messages should be consumed and printed to the command line:
 
 [source,bash]
 ----
-message on rusty-msgs[0]@11: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
-message on rusty-msgs[0]@12: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
-message on rusty-msgs[0]@13: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
-message on rusty-msgs[0]@14: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
-message on rusty-msgs[0]@15: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
-message on rusty-msgs[0]@16: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
+[2020-12-29 02:33:35] INFO Bootstraping with localhost:9092
+[2020-12-29 02:33:35] INFO Compatibility with Kafka 0.8.2
+[2020-12-29 02:33:35] INFO Configuration: blocking - by node - discard on error - max before overflow: -1 - produce batch size: 200 - client timeout: 20000 ms
+[2020-12-29 02:33:35] INFO                message Ttl: 60 s - max retry: 3 - refresh metadata interval 600 s
+[2020-12-29 02:33:35] INFO                min time between refresh metadata: 42 s - temporary ignore partition time: 42 s - produce buffering time: 5000 ms
+[2020-12-29 02:33:35] INFO                compression codec: none - receive buffer size: 65536 - send buffer size: 102400
+[2020-12-29 02:33:35] INFO                require Acks: all in sync replicas - min in sync replicas: -1 - retry if not enough replicas after append: no
+[2020-12-29 02:33:35] INFO                request time out: 10000 ms - max in flight requests: 5 - max concurrency: 3
+[2020-12-29 02:33:35] INFO                max postpone messages: 1000 - max successive node errors: 2 - fetch max wait time: 100
+[2020-12-29 02:33:35] INFO                fetch min bytes: 1 - fetch message max bytes: 1048576 - consume batch size: 10
+[2020-12-29 02:33:35] INFO Fetching metadata from [localhost:9092]...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /kafka-subscriber-dotnet
+[2020-12-29 02:33:35] INFO [Metadata][Brokers] (Id:0 Host:10.0.5.23 Port:9092)
+[2020-12-29 02:33:35] INFO Removing broker '[localhost:9092]' from the cluster in response to new topology
+[2020-12-29 02:33:35] INFO Fetching metadata for topics 'rusty-msgs' from [10.0.5.23:9092]...
+[2020-12-29 02:33:35] INFO [Metadata][Topic] rusty-msgs:NoError 0:0:NoError:1:1
+[2020-12-29 02:33:35] INFO Connected to [Unknown]
+[2020-12-29 02:33:35] INFO Connected to (Id:0 Host:10.0.5.23 Port:9092)
+info: kafka_subscriber_dotnet.KafkaConsumerHostedService[0]
+      Receieved: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
+info: kafka_subscriber_dotnet.KafkaConsumerHostedService[0]
+      Receieved: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
+info: kafka_subscriber_dotnet.KafkaConsumerHostedService[0]
+      Receieved: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
+info: kafka_subscriber_dotnet.KafkaConsumerHostedService[0]
+      Receieved: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
+info: kafka_subscriber_dotnet.KafkaConsumerHostedService[0]
+      Receieved: SSXVNJHPDQDXVCRASTVYBCWVMGNYKRXVZXKGXTSPSJDGYLUEGQFLAQLOCFLJBEPOWFNSOMYARHAOPUFOJHHDXEHXJBHWGSMZJGNL
+info: kafka_subscriber_dotnet.KafkaConsumerHostedService[0]
 ----
 
